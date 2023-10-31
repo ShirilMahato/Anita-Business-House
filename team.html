@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anita Business House</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="images/icon.png" type="image/png" />
+  <style>
+    .team{
+      margin: 20px;
+      margin-top: 100px;
+      justify-content: center;
+    }
+    .team-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 20px;
+      align-items: center;
+    }
+    .team-img{
+      width: 500px ;
+    }
+    .team-text{
+      width: 40%;
+      margin-top: 100px;
+      margin-left: 40px;
+    }
+    .team-text p{
+      text-align: justify;
+      font-size: 20px;
+    }
+    .team-img img{
+      border-radius: 20px;
+    }
+    .team-img img:hover{
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2) !important;
+    }
+    @media screen and (max-width: 1100px){
+      .team-text p{
+        font-size: 18px;
+      }
+    }
+    @media screen and (max-width: 950px){
+      .team-container{
+        flex-direction: column;
+      }
+      .team-text{
+        width: 90%;
+        margin: 25px !important;
+      }
+      .team-img{
+        width: 400px !important;
+      }
+    }
+    @media screen and (max-width: 500px){
+      .team-text p{
+        font-size: 16px;
+      }
+      .team-img{
+        width: 300px !important;
+      }
+    }
+  </style>
+  <body>
+    <nav class="nav" id="navbar">
+      <div class="logo">
+        <img src="images/logo1.png" alt="" />
+      </div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="business_hub.html">Business Hub</a>
+        <a href="network.html">Our Networking</a>
+        <div class="dropdown">
+          <a href="#">Our Team</a>
+          <div class="dropdown-content">
+              <a href="md.html">Message from MD</a>
+              <a href="director.html">Message from Director</a>
+              <a href="manager.html">Message from Manager</a>
+          </div>
+      </div>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <input type="checkbox" id="check" class="checkbtn" />
+      <label for="check" class="checkbtn-label">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </nav>
+
+    <section class="team">
+      <h1 class="title">Message from MD</h1>
+      <div class="team-container">
+
+        <div class="team-img">
+          <img src="images/Rabin.jpg" alt="" />
+        </div>
+        <div class="team-text">
+          <p>
+            Dear partners, Customers and team, <br> <br>
+          With great pride and gratitude that I reflect on my journey of 35 years in this industry and with our
+          company, Anita Business House Pvt. Ltd. Over the years we have adjusted, learned and adapted to the
+          ever-changing business environment. Our unwavering commitment to excellence, reliability and trust has
+          been our guiding light. <br>
+          As we move forward, I am committed to our core values and continue to improve. It’s not just about
+          going into business, it’s about fostering relationships, establishing industry standards, and making a
+          meaningful impact. Thank you for your trust and support.
+          We look forward with excitement and optimism as we continue to innovate, deliver quality products and
+          build a stronger future together. <br> <br>
+          Regards, <br>
+          Rabin Shrestha <br>
+          Managing Director <br>
+          Anita Business House Pvt. LTD
+        </p>
+      </div>
+    </div>
+
+    </section>
+    <!-- <section class="team">
+      <h1 class="title">Message from MD</h1>
+      <div class="team-container">
+        <div class="team-text">
+          <p>
+Dear partners, Customers and team,
+With great pride and gratitude that I reflect on my journey of 35 years in this industry and with our
+company, Anita Business House Pvt. Ltd. Over the years we have adjusted, learned and adapted to the
+ever-changing business environment. Our unwavering commitment to excellence, reliability and trust has
+been our guiding light. <br>
+As we move forward, I am committed to our core values and continue to improve. It’s not just about
+going into business, it’s about fostering relationships, establishing industry standards, and making a
+meaningful impact. Thank you for your trust and support.
+We look forward with excitement and optimism as we continue to innovate, deliver quality products and
+build a stronger future together. <br> <br>
+Regards, <br>
+Rabin Shrestha <br>
+Managing Director <br>
+Anita Business House Pvt. LTD
+          </p>
+        </div>
+        <div class="team-img">
+          <img src="images/Rabin.jpg" alt="" />
+        </div>
+      </div>
+    </section> -->
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about_us.html">About Us</a></li>
+              <li><a href="business_hub.html">Business Hub</a></li>
+              <!-- <li><a href="#">Our Network</a></li> -->
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get info</h4>
+            <ul>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Teams</a></li>
+              <li><a href="#">Banking Partner</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul class="contact-list">
+              <li>
+                <a href="#">
+                  <div class="contact-item">
+                    <i class="fa-solid fa-envelope fa-beat"></i>
+                    <span>abhplat2019@gmail.com</span>
+                  </div>
+                  <div class="contact-item">
+                    <!-- <i class="fa-solid fa-envelope fa-beat"></i> -->
+                    <span>&nbsp;&emsp;anitatrading1@gmail.com</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="contact-item">
+                    <!-- <i class="fa-solid fa-phone fa-beat"></i> -->
+                    <span>&nbsp;&emsp;+977-1-4468601</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fa-solid fa-phone fa-beat"></i>
+                    <span>+977-1-4423455</span>
+                  </div>
+                  <div class="contact-item">
+                    <!-- <i class="fa-solid fa-phone fa-beat"></i> -->
+                    <span>&nbsp;&emsp;+977-1-4010770</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="contact-item">
+                    <i class="fa-solid fa-mobile fa-beat"></i>
+                    <span>+977 9851070133</span>
+                  </div>
+                  <div class="contact-item">
+                    <!-- <i class="fa-solid fa-mobile fa-beat"></i> -->
+                    <span>&nbsp;&emsp;+977 9802070133</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

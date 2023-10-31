@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+
+.size2, .size3 {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .size2 {
+    display: block;
+  }
+  .size1, .size3{
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .size3 {
+    display: block;
+  }
+  .size1, .size2{
+    display: none;
+  }
+} 
+
+  </style>
+
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <nav class="nav" id="navbar">
+        <div class="logo">
+          <img src="images/logo1.png" alt="" />
+        </div>
+        <div class="links">
+          <a href="index.html">Home</a>
+          <a href="about_us.html">About Us</a>
+          <a href="business_hub.html">Business Hub</a>
+          <a href="network.html">Our Networking</a>
+          <div class="dropdown">
+            <a href="#">Our Team</a>
+            <div class="dropdown-content">
+                <a href="md.html">Message from MD</a>
+                <a href="director.html">Message from Director</a>
+                <a href="manager.html">Message from Manager</a>
+            </div>
+        </div>
+          <a href="contact.html">Contact Us</a>
+        </div>
+  
+        <input type="checkbox" id="check" class="checkbtn" />
+        <label for="check" class="checkbtn-label">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </nav>
+
+    <!-- Our Network Area  -->
+<section class="network-area">
+  <div class="title">
+    Our Network Area
+  </div>
+  <div class="map size1">
+    <img src="images/map of nepal.png" alt="" />
+
+      <div class="pin ktm" style="top: 66%; left: 63.5%;">
+        <span>Kathmandu</span>
+      </div>
+      <div class="pin patan" style="top: 71%; left: 63%;">
+        <span>Patan</span>
+      </div>
+      <div class="pin bhaktapur" style="top: 67.7%; left: 64.3%;">
+        <span>Bhaktapur</span>
+      </div>
+    <div class="pin " style="top: 70%; left: 66%;">
+      <span>Banepa</span>
+    </div>
+    <div class="pin " style="top: 54%; left: 47%;">
+      <span>Pokhara</span>
+    </div>
+    <div class="pin " style="top: 70%; left: 51%;">
+      <span>Narayanghat</span>
+    </div>
+    <div class="pin " style="top: 67%; left: 40%;">
+      <span>Butwal</span>
+    </div>
+    <div class="pin " style="top: 61%; left: 29%;">
+      <span>Dang</span>
+    </div>
+    <div class="pin " style="top: 58%; left: 20%;">
+      <span>Nepalgunj</span>
+    </div>
+    <div class="pin " style="top: 43%; left: 8.5%;">
+      <span>Dhangadhi</span>
+    </div>
+    <div class="pin " style="top: 74%; left: 61%;">
+      <span>Hetauda</span>
+    </div>
+    <div class="pin " style="top: 79%; left: 56%;">
+      <span>Birgunj</span>
+    </div>
+    <div class="pin " style="top: 87%; left: 71%;">
+      <span> Janakpur</span>
+    </div>
+    <div class="pin " style="top: 88%; left: 85%;">
+      <span>Itahari</span>
+    </div>
+    <div class="pin " style="top: 85.5%; left: 86%;">
+      <span>Dharan</span>
+    </div>
+    <div class="pin " style="top: 88%; left: 95%;">
+      <span>Birtamode</span>
+    </div>
+    <div class="pin " style="top: 90%; left: 92%;">
+      <span>Damak</span>
+    </div>
+    <div class="pin " style="top: 55%; left: 42%;">
+      <span>Baglung</span>
+    </div>
+    <div class="pin " style="top: 90%; left: 88%;">
+      <span>Biratnagar</span>
+    </div>
+    <div class="pin " style="top: 54%; left: 44%;">
+      <span>Kushma</span>
+    </div>
+    <div class="pin " style="top: 48%; left: 41%;">
+      <span>Beni</span>
+    </div>
+    <div class="pin " style="top: 47%; left: 14%;">
+      <span>Tikapur</span>
+    </div>
+    <div class="pin " style="top: 88%; left: 75%;">
+      <span>Lahan</span>
+    </div>
+    <div class="pin " style="top: 63%; left: 58%;">
+      <span>Dhading</span>
+    </div>
+    <div class="pin " style="top: 61%; left: 50%;">
+      <span>Damauli</span>
+    </div>
+    <div class="pin " style="top: 41%; left: 5%;">
+      <span>Mahendranagar</span>
+    </div>
+
+  </div>
+
+
+  <div class="map size2">
+    <img src="images/map of nepal.png" alt="" />
+
+      <div class="pin ktm" style="top: 65%; left: 62.5%;">
+        <span>Kathmandu</span>
+      </div>
+      <div class="pin patan" style="top: 70%; left: 62.5%;">
+        <span>Patan</span>
+      </div>
+      <div class="pin bhaktapur" style="top: 66.5%; left: 63.7%;">
+        <span>Bhaktapur</span>
+      </div>
+    <div class="pin " style="top: 69%; left: 65%;">
+      <span>Banepa</span>
+    </div>
+    <div class="pin " style="top: 54%; left: 47%;">
+      <span>Pokhara</span>
+    </div>
+    <div class="pin " style="top: 69%; left: 50%;">
+      <span>Narayanghat</span>
+    </div>
+    <div class="pin " style="top: 67%; left: 40%;">
+      <span>Butwal</span>
+    </div>
+    <div class="pin " style="top: 61%; left: 29%;">
+      <span>Dang</span>
+    </div>
+    <div class="pin " style="top: 56%; left: 20.5%;">
+      <span>Nepalgunj</span>
+    </div>
+    <div class="pin " style="top: 43%; left: 10%;">
+      <span>Dhangadhi</span>
+    </div>
+    <div class="pin " style="top: 73%; left: 61%;">
+      <span>Hetauda</span>
+    </div>
+    <div class="pin " style="top: 77%; left: 55.5%;">
+      <span>Birgunj</span>
+    </div>
+    <div class="pin " style="top: 84.5%; left: 69.5%;">
+      <span> Janakpur</span>
+    </div>
+    <div class="pin " style="top: 85%; left: 83.5%;">
+      <span>Itahari</span>
+    </div>
+    <div class="pin " style="top: 83%; left: 84.5%;">
+      <span>Dharan</span>
+    </div>
+    <div class="pin " style="top: 86.5%; left: 93%;">
+      <span>Birtamode</span>
+    </div>
+    <div class="pin " style="top: 88.5%; left: 92%;">
+      <span>Damak</span>
+    </div>
+    <div class="pin " style="top: 55%; left: 42%;">
+      <span>Baglung</span>
+    </div>
+    <div class="pin " style="top: 88%; left: 86.5%;">
+      <span>Biratnagar</span>
+    </div>
+    <div class="pin " style="top: 54%; left: 44%;">
+      <span>Kushma</span>
+    </div>
+    <div class="pin " style="top: 48%; left: 41%;">
+      <span>Beni</span>
+    </div>
+    <div class="pin " style="top: 47%; left: 14%;">
+      <span>Tikapur</span>
+    </div>
+    <div class="pin " style="top: 85.5%; left: 73.5%;">
+      <span>Lahan</span>
+    </div>
+    <div class="pin " style="top: 63%; left: 58%;">
+      <span>Dhading</span>
+    </div>
+    <div class="pin " style="top: 61%; left: 50%;">
+      <span>Damauli</span>
+    </div>
+    <div class="pin " style="top: 41%; left: 7%;">
+      <span>Mahendranagar</span>
+    </div>
+
+  </div>
+  <div class="map size3">
+    <img src="images/map of nepal.png" alt="" />
+
+      <div class="pin ktm" style="top: 63.5%; left: 62%;">
+        <span>Kathmandu</span>
+      </div>
+      <div class="pin patan" style="top: 68.5%; left: 62%;">
+        <span>Patan</span>
+      </div>
+      <div class="pin bhaktapur" style="top: 66%; left: 63%;">
+        <span>Bhaktapur</span>
+      </div>
+    <div class="pin " style="top: 68.5%; left: 64.5%;">
+      <span>Banepa</span>
+    </div>
+    <div class="pin " style="top: 54%; left: 47%;">
+      <span>Pokhara</span>
+    </div>
+    <div class="pin " style="top: 68%; left: 50%;">
+      <span>Narayanghat</span>
+    </div>
+    <div class="pin " style="top: 66%; left: 41%;">
+      <span>Butwal</span>
+    </div>
+    <div class="pin " style="top: 61%; left: 29%;">
+      <span>Dang</span>
+    </div>
+    <div class="pin " style="top: 56%; left: 21.5%;">
+      <span>Nepalgunj</span>
+    </div>
+    <div class="pin " style="top: 43%; left: 11.5%;">
+      <span>Dhangadhi</span>
+    </div>
+    <div class="pin " style="top: 71.5%; left: 61%;">
+      <span>Hetauda</span>
+    </div>
+    <div class="pin " style="top: 76%; left: 55.5%;">
+      <span>Birgunj</span>
+    </div>
+    <div class="pin " style="top: 83%; left: 69%;">
+      <span> Janakpur</span>
+    </div>
+    <div class="pin " style="top: 84%; left: 82.5%;">
+      <span>Itahari</span>
+    </div>
+    <div class="pin " style="top: 82%; left: 83%;">
+      <span>Dharan</span>
+    </div>
+    <div class="pin " style="top: 85%; left: 91.5%;">
+      <span>Birtamode</span>
+    </div>
+    <div class="pin " style="top: 86%; left: 90%;">
+      <span>Damak</span>
+    </div>
+    <div class="pin " style="top: 55%; left: 42%;">
+      <span>Baglung</span>
+    </div>
+    <div class="pin " style="top: 86%; left: 85%;">
+      <span>Biratnagar</span>
+    </div>
+    <div class="pin " style="top: 54%; left: 44%;">
+      <span>Kushma</span>
+    </div>
+    <div class="pin " style="top: 48%; left: 41%;">
+      <span>Beni</span>
+    </div>
+    <div class="pin " style="top: 47%; left: 15.5%;">
+      <span>Tikapur</span>
+    </div>
+    <div class="pin " style="top: 83.5%; left: 73%;">
+      <span>Lahan</span>
+    </div>
+    <div class="pin " style="top: 63%; left: 58%;">
+      <span>Dhading</span>
+    </div>
+    <div class="pin " style="top: 61%; left: 50%;">
+      <span>Damauli</span>
+    </div>
+    <div class="pin " style="top: 41%; left: 7%;">
+      <span>Mahendranagar</span>
+    </div>
+
+  </div>
+
+
+</section>
+
+<section class="network" id="network">
+    <div class="table">
+      <table id="table">
+        <tr id="header">
+          <th>Sn</th>
+          <th>Area</th>
+          <th>No.of Dealers</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Kathmandu</td>
+          <td>10</td>
+        </tr>
+      </div>
+        <tr>
+          <td>2</td>
+          <td>Patan</td>
+          <td>3</td>
+        </tr>
+      </div>
+        <tr>
+          <td>3</td>
+          <td>Bhaktapur</td>
+          <td>2</td>
+        </tr>
+      </div>
+        <tr>
+          <td>4</td>
+          <td>Banepa </td>
+          <td>1</td>
+        </tr>
+      </div>
+        <tr>
+          <td>5</td>
+          <td>Pokhara</td>
+          <td>4</td>
+        </tr>
+      </div>
+        <tr>
+          <td>6</td>
+          <td>Narayannghat</td>
+          <td>4</td>
+        </tr>
+      </div>
+        <tr>
+          <td>7</td>
+          <td>Butwal</td>
+          <td>3</td>
+        </tr>
+      </div>
+        <tr>
+          <td>8</td>
+          <td>Dang</td>
+          <td>5</td>
+        </tr>
+      </div>
+        <tr>
+          <td>9</td>
+          <td>Surkhet</td>
+          <td>2</td>
+        </tr>
+      </div>
+        <tr>
+          <td>10</td>
+          <td>Nepalgunj</td>
+          <td>3</td>
+        </tr>
+      </div>
+        <tr>
+          <td>11</td>
+          <td>Dhangadhi</td>
+          <td>5</td>
+        </tr>
+      </div>
+        <tr>
+          <td>12</td>
+          <td>Hetauda</td>
+          <td>2</td>
+        </tr>
+      </div>
+        <tr>
+          <td>13</td>
+          <td>Birgunj</td>
+          <td>1</td>
+        </tr>
+      </div>
+        <tr>
+          <td>14</td>
+          <td>Janakpur</td>
+          <td>2</td>
+        </tr>
+      </div>
+        <tr>
+          <td>15</td>
+          <td> Itahari </td>
+          <td>2</td>
+        </tr>
+      </div>
+        <tr>
+          <td>16</td>
+          <td>Dharan</td>
+          <td>2</td>
+        </tr>
+      </div>
+        <tr>
+          <td>17</td>
+          <td>Damak</td>
+          <td>2</td>
+        </tr>
+      </div>
+        <tr>
+          <td>18</td>
+          <td>Birtamode</td>
+          <td>3</td>
+        </tr>
+      </div>
+        <tr>
+          <td>19</td>
+          <td>Baglung </td>
+          <td>1</td>
+        </tr>
+      </div>
+        <tr>
+          <td>20</td>
+          <td>Biratnagar</td>
+          <td>2</td>
+        </tr>
+      </div>
+        <tr>
+          <td>21</td>
+          <td>Kushma </td>
+          <td>1</td>
+        </tr>
+      </div>
+        <tr>
+          <td>22</td>
+          <td>Beni</td>
+          <td>1</td>
+        </tr>
+      </div>
+        <tr>
+          <td>23</td>
+          <td>Tikapur </td>
+          <td>1</td>
+        </tr>
+      </div>
+        <tr>
+          <td>24</td>
+          <td>Lahan</td>
+          <td>2</td>
+        </tr>
+      </div>
+        <tr>
+          <td>25</td>
+          <td>Dhading</td>
+          <td>1</td>
+        </tr>
+      </div>
+        <tr>
+          <td>26</td>
+          <td>Damauli </td>
+          <td>1</td>
+        </tr>
+      </div>
+        <tr>
+          <td>27</td>
+          <td>Mahendranagar</td>
+          <td>1</td>
+        </tr>
+      </div>
+      </div>
+    </table>
+    <button id="show-more-button1">Show More</button>
+    
+    </section>
+
+
+<footer class="footer" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="business_hub.html">Business Hub</a></li>
+            <li><a href="network.html">Our Networking</a></li>
+            <!-- <li><a href="#">Our Team</a></li> -->
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get info</h4>
+          <ul>
+            <li><a href="md.html">Message From MD</a></li>
+            <li><a href="director.html">Message From Director</a></li>
+            <li><a href="manager.html">Message From Manager</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:abhplat2019@gmail.com">
+                <div class="contact-item">
+                  <i class="fa-solid fa-envelope fa-beat"></i>
+                  <span>abhplat2019@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                  <!-- <i class="fa-solid fa-envelope fa-beat"></i> -->
+                  <span>&nbsp;&emsp;anitatrading1@gmail.com</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="tel:014468601">
+                <div class="contact-item">
+                  <!-- <i class="fa-solid fa-phone fa-beat"></i> -->
+                  <span>&nbsp;&emsp;+977-1-4468601</span>
+                </div>
+                <div class="contact-item">
+                  <i class="fa-solid fa-phone fa-beat"></i>
+                  <span>+977-1-4423455</span>
+                </div>
+                <div class="contact-item">
+                  <!-- <i class="fa-solid fa-phone fa-beat"></i> -->
+                  <span>&nbsp;&emsp;+977-1-4010770</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="tel:9851070133">
+                <div class="contact-item">
+                  <i class="fa-solid fa-mobile fa-beat"></i>
+                  <span>+977 9851070133</span>
+                </div>
+                <div class="contact-item">
+                  <!-- <i class="fa-solid fa-mobile fa-beat"></i> -->
+                  <span>&nbsp;&emsp;+977 9802070133</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61552555666272" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+            <a href="https://www.instagram.com/anitabhouse_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/anitabhouse/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer>
+    <!-- scripts -->
+    <script>
+        // Get the button and table rows
+const button = document.getElementById('show-more-button1');
+const table = document.getElementById('table');
+const rows = table.getElementsByTagName('tr');
+
+// Set the number of initially visible rows
+const initialVisibleRows = 11;
+
+// Initialize the index to track the number of visible rows
+let visibleRowCount = initialVisibleRows;
+
+// Function to toggle visibility of rows
+function toggleRowsVisibility() {
+  for (let i = 1; i < rows.length; i++) {
+    if (i < visibleRowCount) {
+      rows[i].style.display = 'table-row';
+    } else {
+      rows[i].style.display = 'none';
+    }
+  }
+}
+
+// Add event listener to the button
+button.addEventListener('click', function () {
+  if (visibleRowCount < rows.length) {
+    visibleRowCount = rows.length; // Show all rows
+    button.innerText = 'Show Less';
+  } else {
+    visibleRowCount = initialVisibleRows; // Show only the initial rows
+    button.innerText = 'Show More';
+  }
+  toggleRowsVisibility();
+});
+
+// Initialize row visibility
+toggleRowsVisibility();
+
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

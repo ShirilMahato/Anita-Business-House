@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anita Business House</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="images/icon.png" type="image/png" />
+<body>
+    <nav class="nav" id="navbar">
+        <div class="logo">
+          <img src="images/logo1.png" alt="" />
+        </div>
+        <div class="links">
+          <a href="index.html">Home</a>
+          <a href="about_us.html">About Us</a>
+          <a href="business_hub.html">Business Hub</a>
+          <a href="network.html">Our Networking</a>
+          <div class="dropdown">
+            <a href="#">Our Team</a>
+            <div class="dropdown-content">
+                <a href="md.html">Message from MD</a>
+                <a href="director.html">Message from Director</a>
+                <a href="manager.html">Message from Manager</a>
+            </div>
+        </div>
+          <a href="contact.html">Contact Us</a>
+        </div>
+  
+        <input type="checkbox" id="check" class="checkbtn" />
+        <label for="check" class="checkbtn-label">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </nav>
+    
+    
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="images/2m.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/2_.jpg">
+                    <img src="images/2.jpg" alt="">
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="images/1m.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/1_.jpg">
+                    <img src="images/1.jpg" alt="">
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="images/3m.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/3_.jpg">
+                    <img src="images/3.jpg" alt="">
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="images/4m.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/4_.jpg">
+                    <img src="images/4.jpg" alt="">
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="images/5m.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/5_.jpg">
+                    <img src="images/5.jpg" alt="">
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="images/6m.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/6_.jpg">
+                    <img src="images/6.jpg" alt="">
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="images/7m.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/7_.jpg">
+                    <img src="images/7.jpg" alt="">
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="images/8m.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/8_.jpg">
+                    <img src="images/8.jpg" alt="">
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="images/9m.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/9_.jpg">
+                    <img src="images/9.jpg" alt="">
+                </picture>
+            </div>
+            <div class="item">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="images/10m.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/10_.jpg">
+                    <img src="images/10.jpg" alt="">
+                </picture>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- introduction part  -->
+    <section class="intro">
+
+        <h1 class="title">Introduction</h1>
+        <p>Anita Business House Pvt. Ltd. is a leading distribution and service
+            provider based in Kathmandu, Nepal. With over two decades of experience,
+            our company has established a reputation for reliability,
+            trustworthiness, and supply chain excellence. With a proud history
+            dating back to 2003, our company has established a reputation for
+            reliability, trustworthiness, and supply chain excellence. We specialize
+            in the distribution of a diverse range of high-quality products,
+            building strong partnerships with suppliers, and serving customers
+            across Nepal.</p>
+
+        <div class="building">
+            <img src="images/building.jpg" alt="">
+        </div>
+
+        <div class="intro-details">
+            <div class="detail-box">
+                <div class="intro-img">
+                    <img src="images/Mission.png" alt="">
+                </div>
+              <h2>Mission</h2>
+              <p>To emerge as the foremost distribution and service provider in Nepal, known for our unwavering
+                commitment to being a reliable supplier of quality products.
+                </p>
+                <div class="button-container">
+                  <a href="about_us.html">
+
+                    <button id="details-button" class="more">Read More</button>
+                  </a>
+                  </div>
+            </div>
+            <div class="detail-box">
+                <div class="intro-img">
+                    <img src="images/vision.png" alt="">
+                </div>
+              <h2>Vision</h2>
+              <p>To emerge as Nepal’s most trusted and preferred distribution and service partner, setting the industry
+                benchmark for excellence, innovation, and nationwide reach.
+                </p>
+                <div class="button-container">
+                  <a href="about_us.html">
+
+                    <button id="details-button" class="more">Read More</button>
+                  </a>
+                  </div>
+            </div>
+
+          </div>
+    </section>
+
+    <section class="products">
+        <h1 class="title">Products Showcase</h1>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--one">
+              <span>Revlon</span>
+              <div>
+                <h2>Modi Mundi Beauty Products Pvt. Ltd</h2>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  Delhi, India
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--two">
+              <span>OSHEA Herbals </span>
+              <div>
+                <h2>OJB Herbals PVT. LTD</h2>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  Noida, UP, India
+                </p>
+              </div>
+            </div>
+      
+            <div class="swiper-slide swiper-slide--three">
+              <span>Pierre Cardin Cosmetic </span>
+              <div>
+                <h2>Carsibasi Kozmetik Tekstil LTD</h2>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  STi, Istanbul, Turkey
+                </p>
+                
+              </div>
+            </div>
+      
+            <div class="swiper-slide swiper-slide--four">
+              <span>Stanfresh</span>
+              <div>
+                <h2>Stanvac Prime Pvt. LTD</h2>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  New Delhi, India
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--five">
+              <span>Revlon</span>
+              <div>
+                <h2>Modi Mundi Beauty Products Pvt. Ltd</h2>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  Delhi, India
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--six">
+              <span>OSHEA Herbals </span>
+              <div>
+                <h2>OJB Herbals PVT. LTD</h2>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  Noida, UP, India
+                </p>
+              </div>
+            </div>
+      
+            <div class="swiper-slide swiper-slide--seven">
+              <span>Pierre Cardin Cosmetic </span>
+              <div>
+                <h2>Carsibasi Kozmetik Tekstil LTD</h2>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  STi, Istanbul, Turkey
+                </p>
+                
+              </div>
+            </div>
+      
+            <div class="swiper-slide swiper-slide--eight">
+              <span>Stanfresh</span>
+              <div>
+                <h2>Stanvac Prime Pvt. LTD</h2>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  New Delhi, India
+                </p>
+              </div>
+            </div>
+          
+            <div class="swiper-slide swiper-slide--nine">
+              <span>Rotorite</span>
+              <div>
+                <h2>Rotorite Pen Industries</h2>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  Kolkata, India
+                </p>
+              </div>
+            </div>
+          
+
+            <div class="swiper-slide swiper-slide--ten">
+              <span>Trackstar</span>
+              <div>
+                <h2>Trackstar Industries Pvt. Ltd.</h2>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  Udaipur, Rajasthan, India
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      
+    
+
+    <footer class="footer" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>company</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="business_hub.html">Business Hub</a></li>
+                <li><a href="network.html">Our Networking</a></li>
+                <!-- <li><a href="#">Our Team</a></li> -->
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>get info</h4>
+              <ul>
+                <li><a href="md.html">Message From MD</a></li>
+                <li><a href="director.html">Message From Director</a></li>
+                <li><a href="manager.html">Message From Manager</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Contact Us</h4>
+              <ul class="contact-list">
+                <li>
+                  <a href="mailto:abhplat2019@gmail.com">
+                    <div class="contact-item">
+                      <i class="fa-solid fa-envelope fa-beat"></i>
+                      <span>abhplat2019@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                      <!-- <i class="fa-solid fa-envelope fa-beat"></i> -->
+                      <span>&nbsp;&emsp;anitatrading1@gmail.com</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:014468601">
+                    <div class="contact-item">
+                      <!-- <i class="fa-solid fa-phone fa-beat"></i> -->
+                      <span>&nbsp;&emsp;+977-1-4468601</span>
+                    </div>
+                    <div class="contact-item">
+                      <i class="fa-solid fa-phone fa-beat"></i>
+                      <span>+977-1-4423455</span>
+                    </div>
+                    <div class="contact-item">
+                      <!-- <i class="fa-solid fa-phone fa-beat"></i> -->
+                      <span>&nbsp;&emsp;+977-1-4010770</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:9851070133">
+                    <div class="contact-item">
+                      <i class="fa-solid fa-mobile fa-beat"></i>
+                      <span>+977 9851070133</span>
+                    </div>
+                    <div class="contact-item">
+                      <!-- <i class="fa-solid fa-mobile fa-beat"></i> -->
+                      <span>&nbsp;&emsp;+977 9802070133</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61552555666272" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                <a href="https://www.instagram.com/anitabhouse_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/anitabhouse/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </footer>
+     <!-- scripts -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+     <script src="script.js"></script>
+</body>
+</html>
